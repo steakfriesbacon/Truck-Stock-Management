@@ -1,0 +1,31 @@
+﻿<Window x:Class="StockTruckManagementBraydenRoberts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StockTruckManagementBraydenRoberts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel HorizontalAlignment="Left" Height="412" Margin="0,10,0,-1.333" VerticalAlignment="Top" Width="790">
+        <Menu Height="72" Margin="0,0,10,0" Background="White" HorizontalAlignment="Center" Width="770">
+            <MenuItem Header="Truck Management" FontSize="25">
+                <MenuItem Header="Add New Truck with New Model" x:Name="addNewTruckNewModel" Click="AddNewTruckNewModel_Click"/>
+                <MenuItem Header="Add New Truck with Existing Model" x:Name="addNewTruckwithExistingModel" Click="AddNewTruckwithExistingModel_Click"/>
+                <MenuItem Header="Search Truck" x:Name="searchTruckbyId" Click="SearchTruck_Click"/>
+                <MenuItem Header="Search Truck and Update" x:Name="searchTruckandUpdate" Click="SearchTruckAndUpdate_Click"/>
+            </MenuItem>
+            <MenuItem Header="Stored Procedure" FontSize="25">
+                <MenuItem Header="Search Truck By ID" x:Name="searchTruckby" Click="SearchTruckby_Click" />
+                <MenuItem Header="Search Truck Details By ID" x:Name="searchTruckDetailsbyID" Click="SearchTruckDetailsbyID_Click"/>
+            </MenuItem>
+
+        </Menu>
+        
+        <StackPanel Name="CenterPanel">
+            
+            
+        </StackPanel>
+
+    </StackPanel>
+
+</Window>
